@@ -1,0 +1,4 @@
+use xampserver--
+execute these queries
+1) create database task;
+2) create table reg (fname varchar(20),lname varchar(20),gender varchar(6),email varchar(30),pass varchar(20),cpass varchar(20));

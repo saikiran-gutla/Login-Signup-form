@@ -1,0 +1,32 @@
+<html>
+<head><link rel="stylesheet" href="des.css"></head>
+<script src="pass.js"></script>
+<script src="validate.js"></script>
+<body><br></br>
+	<h1><u>Registration Form</u></h1>
+	<div class="signup">
+<form name="myform" method="POST" action="task.php"  onSubmit="return verify()" >
+<table width="350" align="center">	
+<tr><td>First Name:</td>			 	<td><input type="text" name="fname" id="name" placeholder="Enter First Name" required></td></tr>
+<tr><td>Last Name: </td>				<td><input type="text" name="lname" placeholder="Enter Last Name"></td></tr>
+	
+<tr><td>Gender : </td>	   <td>Male<input type="radio" name="gender" value="male" required>
+						   Female<input type="radio" name="gender" value="female" required></td></tr>
+	
+<tr><td>Mobile :</td>   		   		<td><input type="number" id="valid" name="mobile" placeholder="Enter Mobile Number" required></td></tr>
+<tr><td>Email :	</td>    				<td><input type="email" id="valid" name="email" placeholder="Enter Email id"required></td></tr>
+<tr><td>Password :</td>  				<td><input type="password" id="pass" name="pass" placeholder="Enter Password" required></td></tr>
+<tr><td>Confirm Password :</td>			<td><input type="password" id="cpass" name="cpass" placeholder="Confirm password" required></td></tr>
+<td>Already have account?<a href="login.html">
+	<input type="button" value="Login" class="button" onClick="redirect()"></a></td>
+<td><input type="submit" value="Signup" class="button" onClick="redirect()"></td>
+</table>
+	<h3 id="msg"></h3>
+	<!--<input type="reset" value="Clear" class="button">-->
+	</div>
+			
+			
+</html>
+</form>
+</body>
+
